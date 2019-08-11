@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "With Patterns", "With Patterns", "{E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "No Patterns", "No Patterns", "{203BEBE2-484E-40A4-97CD-F395B1AED935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakePizzas.NoFactory", "No Patterns\Pizzaria.NoFactory\MakePizzas.NoFactory.csproj", "{7453F3E5-8A8B-4B3D-89C6-8E19CC8A2A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakePizzas.WithFactory", "With Patterns\Pizzaria.WithFactory\MakePizzas.WithFactory.csproj", "{690F9C32-B852-4347-AD81-10AF0AB95496}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{5B7EEB30-CB0E-4F45-86AF-418BB1CD19B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiperDev.Extensions", "Extensions\HiperDev.Extensions\HiperDev.Extensions.csproj", "{40EFDF2F-9E07-4AC5-B643-53BBB5ABB25A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7453F3E5-8A8B-4B3D-89C6-8E19CC8A2A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7453F3E5-8A8B-4B3D-89C6-8E19CC8A2A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7453F3E5-8A8B-4B3D-89C6-8E19CC8A2A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7453F3E5-8A8B-4B3D-89C6-8E19CC8A2A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690F9C32-B852-4347-AD81-10AF0AB95496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690F9C32-B852-4347-AD81-10AF0AB95496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690F9C32-B852-4347-AD81-10AF0AB95496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690F9C32-B852-4347-AD81-10AF0AB95496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40EFDF2F-9E07-4AC5-B643-53BBB5ABB25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EFDF2F-9E07-4AC5-B643-53BBB5ABB25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EFDF2F-9E07-4AC5-B643-53BBB5ABB25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EFDF2F-9E07-4AC5-B643-53BBB5ABB25A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7453F3E5-8A8B-4B3D-89C6-8E19CC8A2A21} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
+		{690F9C32-B852-4347-AD81-10AF0AB95496} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
+		{40EFDF2F-9E07-4AC5-B643-53BBB5ABB25A} = {5B7EEB30-CB0E-4F45-86AF-418BB1CD19B5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD1418E2-D2B7-478B-A09D-DAD2F1791AE3}
+	EndGlobalSection
+EndGlobal
