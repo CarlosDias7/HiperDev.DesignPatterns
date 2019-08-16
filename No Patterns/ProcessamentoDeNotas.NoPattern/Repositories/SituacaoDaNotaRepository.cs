@@ -1,9 +1,9 @@
-﻿using ProcessamentoDeNotas.WithCommand.Domain.NotasFiscais.Situacoes;
-using ProcessamentoDeNotas.WithCommand.Domain.NotasFiscais.Situacoes.Tipos;
+﻿using ProcessamentoDeNotas.NoPattern.Domain.NotasFiscais.Situacoes;
+using ProcessamentoDeNotas.NoPattern.Domain.NotasFiscais.Situacoes.Tipos;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProcessamentoDeNotas.WithCommand.Repositories
+namespace ProcessamentoDeNotas.NoPattern.Repositories
 {
     public class SituacaoDaNotaRepository : ISituacaoDaNotaRepository
     {
