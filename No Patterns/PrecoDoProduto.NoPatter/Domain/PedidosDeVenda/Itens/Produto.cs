@@ -1,24 +1,20 @@
-﻿using EmissaoDeOrcamento.WithPatterns.Domain.Base;
+﻿using PrecoDoProduto.NoPattern.Domain.Base;
 using System;
 
-namespace EmissaoDeOrcamento.WithPatterns.Domain.Orcamentos.Itens
+namespace PrecoDoProduto.NoPattern.Domain.Orcamentos.Itens
 {
     public class Produto : Entity
     {
-        public Produto(bool cancelado, int codigo, short codigoDaSituacaoTributariaIcms, string nome, decimal quantidade, decimal valorDeDesconto,
-            decimal valorUnitarioBruto)
+        public Produto(bool cancelado, int codigo, string nome, decimal quantidade, decimal valorUnitarioBruto)
         {
             SetCancelado(cancelado);
             SetCodigo(codigo);
-            SetCodigoDaSituacaoTributariaIcms(codigoDaSituacaoTributariaIcms);
             SetNome(nome);
             SetQuantidade(quantidade);
-            SetValorDeDesconto(valorDeDesconto);
             SetValorUnitarioBruto(valorUnitarioBruto);
         }
 
         public bool Cancelado { get; private set; }
-        public short CodigoDaSituacaoTributariaIcms { get; private set; }
         public string Nome { get; private set; }
         public decimal Quantidade { get; private set; }
         public decimal ValorDeDesconto { get; private set; }
@@ -31,11 +27,6 @@ namespace EmissaoDeOrcamento.WithPatterns.Domain.Orcamentos.Itens
             Cancelado = cancelado;
         }
 
-        public void SetCodigoDaSituacaoTributariaIcms(short codigoDaSituacaoTributariaIcms)
-        {
-            CodigoDaSituacaoTributariaIcms = codigoDaSituacaoTributariaIcms;
-        }
-
         public void SetNome(string nome)
         {
             if (string.IsNullOrWhiteSpace(nome)) throw new InvalidOperationException();
@@ -46,6 +37,8 @@ namespace EmissaoDeOrcamento.WithPatterns.Domain.Orcamentos.Itens
         {
             if (quantidade <= 0) throw new InvalidOperationException();
             Quantidade = quantidade;
+
+            CalcularPrecoDoProduto();
         }
 
         public void SetValorDeDesconto(decimal valorDeDesconto)
