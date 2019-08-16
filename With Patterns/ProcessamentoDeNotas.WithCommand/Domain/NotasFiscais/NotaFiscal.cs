@@ -22,10 +22,23 @@ namespace ProcessamentoDeNotas.WithCommand.Domain.NotasFiscais
         public SituacaoDaNota Situacao { get; private set; }
         public decimal ValorTotal { get; private set; }
 
+        public void AutorizarNota(Autorizada autorizada)
+        {
+            SetSituacao(autorizada);
+        }
+
+        public void CancelarNota(Cancelada cancelada)
+        {
+            SetSituacao(cancelada);
+        }
+
+        public void InutilizarNota(Inutilizada inutilizada)
+        {
+            SetSituacao(inutilizada);
+        }
+
         public void RegularizarNota(Regular situacao)
         {
-            // Adiciona campos de autorização
-            // ...
             SetSituacao(situacao);
         }
 

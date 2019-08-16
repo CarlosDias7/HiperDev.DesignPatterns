@@ -4,6 +4,6 @@ namespace ProcessamentoDeNotas.WithCommand.Domain.NotasFiscais.Processadores
 {
     public interface IProcessadorDeNotaFiscal
     {
-        Task Executa();
+        Task ExecuteAsync();
     }
 }

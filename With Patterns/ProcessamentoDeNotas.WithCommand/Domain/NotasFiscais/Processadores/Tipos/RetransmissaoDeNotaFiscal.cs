@@ -6,21 +6,22 @@ namespace ProcessamentoDeNotas.WithCommand.Domain.NotasFiscais.Processadores.Tip
 {
     public class RetransmissaoDeNotaFiscal : ProcessadorDeNotaFiscal, IProcessadorDeNotaFiscal
     {
-        private readonly NotaFiscal _notaFiscal;
-
         public RetransmissaoDeNotaFiscal(ISituacaoDaNotaRepository situacaoDaNotaRepository, NotaFiscal notaFiscal)
-            : base(situacaoDaNotaRepository)
+            : base(situacaoDaNotaRepository, notaFiscal)
         {
-            _notaFiscal = notaFiscal;
         }
 
-        public async Task Executa()
+        protected override string Descricao => "RETRANSMISSAO";
+
+        public async Task ExecuteAsync()
         {
-            if (!await RetransmitirNota()) return;
-            _notaFiscal.RegularizarNota(_situacaoDaNotaRepository.GetByType<Regular>());
+            if (!await RetransmitirNotaAsync()) return;
+            _notaFiscal.AutorizarNota(_situacaoDaNotaRepository.GetByType<Autorizada>());
+
+            EscreveNoConsole();
         }
 
-        private async Task<bool> RetransmitirNota()
+        private async Task<bool> RetransmitirNotaAsync()
         {
             // Simulando a lógica de transmissão de Nota
             try

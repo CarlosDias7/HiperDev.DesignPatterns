@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmissaoDeOrcamento.WithPatt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessamentoDeNotas.WithCommand", "With Patterns\ProcessamentoDeNotas.WithCommand\ProcessamentoDeNotas.WithCommand.csproj", "{7D1967AA-33EC-4F79-A856-03096C28B5A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessamentoDeNotas.NoPattern", "No Patterns\ProcessamentoDeNotas.NoPattern\ProcessamentoDeNotas.NoPattern.csproj", "{FD553509-FD61-4C08-A696-8E4E8A8BC694}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{7D1967AA-33EC-4F79-A856-03096C28B5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D1967AA-33EC-4F79-A856-03096C28B5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D1967AA-33EC-4F79-A856-03096C28B5A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD553509-FD61-4C08-A696-8E4E8A8BC694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD553509-FD61-4C08-A696-8E4E8A8BC694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD553509-FD61-4C08-A696-8E4E8A8BC694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD553509-FD61-4C08-A696-8E4E8A8BC694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{1FFC6EEB-3E75-4599-800B-8A715CF58AFF} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
 		{8E95E463-1E8C-49FD-98CF-9D374E2665EA} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
 		{7D1967AA-33EC-4F79-A856-03096C28B5A0} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
+		{FD553509-FD61-4C08-A696-8E4E8A8BC694} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD1418E2-D2B7-478B-A09D-DAD2F1791AE3}
