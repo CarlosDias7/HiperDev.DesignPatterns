@@ -1,13 +1,14 @@
-﻿using PrecoDoProduto.NoPattern.Domain.Clientes.Builders;
-using PrecoDoProduto.NoPattern.Domain.Orcamentos.Itens;
-using PrecoDoProduto.NoPattern.Domain.Orcamentos.Itens.Builders;
-using PrecoDoProduto.NoPattern.Domain.PedidosDeVenda;
-using PrecoDoProduto.NoPattern.Domain.PedidosDeVenda.Builders;
-using PrecoDoProduto.NoPattern.Services;
+﻿using PrecoDoProduto.WithChain.Domain.Clientes.Builders;
+using PrecoDoProduto.WithChain.Domain.Orcamentos.Itens;
+using PrecoDoProduto.WithChain.Domain.Orcamentos.Itens.Builders;
+using PrecoDoProduto.WithChain.Domain.PedidosDeVenda;
+using PrecoDoProduto.WithChain.Domain.PedidosDeVenda.Builders;
+using PrecoDoProduto.WithChain.Services;
+using PrecoDoProduto.WithChain.Services.DescontosDoProduto.Chain;
 using System;
 using System.Collections.Generic;
 
-namespace PrecoDoProduto.NoPattern
+namespace PrecoDoProduto.WithChain
 {
     internal class Program
     {
@@ -56,7 +57,8 @@ namespace PrecoDoProduto.NoPattern
             var pedido = GetPedido();
 
             IPromocaoServices promocaoServices = new PromocaoServices();
-            IDefinirPrecoDosProdutosDoPedidoDeVendaServices definirPrecoDosProdutosDoPedidoDeVendaServices = new DefinirPrecoDosProdutosDoPedidoDeVendaServices(promocaoServices);
+            IDescontoDoProdutoChain descontoDoProdutoChain = new DescontoDoProdutoChain(promocaoServices);
+            IDefinirPrecoDosProdutosDoPedidoDeVendaServices definirPrecoDosProdutosDoPedidoDeVendaServices = new DefinirPrecoDosProdutosDoPedidoDeVendaServices(descontoDoProdutoChain);
 
             definirPrecoDosProdutosDoPedidoDeVendaServices.DefinirPrecoDosProdutosDoPedidoDeVenda(pedido);
 

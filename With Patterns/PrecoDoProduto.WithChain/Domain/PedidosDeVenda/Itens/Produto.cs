@@ -1,7 +1,7 @@
-﻿using PrecoDoProduto.NoPattern.Domain.Base;
+﻿using PrecoDoProduto.WithChain.Domain.Base;
 using System;
 
-namespace PrecoDoProduto.NoPattern.Domain.Orcamentos.Itens
+namespace PrecoDoProduto.WithChain.Domain.Orcamentos.Itens
 {
     public class Produto : Entity
     {
@@ -61,6 +61,7 @@ namespace PrecoDoProduto.NoPattern.Domain.Orcamentos.Itens
         {
             return $@"
             Produto {Codigo}
+            Quantidade: {Quantidade}
             Vlr. Unit. Bruto: {ValorUnitarioBruto}
             Vlr. Desconto: {ValorDeDesconto}
             Vlr. Unit. Liquido: {ValorUnitarioLiquido}

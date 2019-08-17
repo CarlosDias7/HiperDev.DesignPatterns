@@ -19,11 +19,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmissaoDeOrcamento.NoPatter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmissaoDeOrcamento.WithPatterns", "With Patterns\EmissaoDeOrcamento.WithPatterns\EmissaoDeOrcamento.WithPatterns.csproj", "{8E95E463-1E8C-49FD-98CF-9D374E2665EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessamentoDeNotas.WithCommand", "With Patterns\ProcessamentoDeNotas.WithCommand\ProcessamentoDeNotas.WithCommand.csproj", "{7D1967AA-33EC-4F79-A856-03096C28B5A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessamentoDeNotas.WithCommand", "With Patterns\ProcessamentoDeNotas.WithCommand\ProcessamentoDeNotas.WithCommand.csproj", "{7D1967AA-33EC-4F79-A856-03096C28B5A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessamentoDeNotas.NoPattern", "No Patterns\ProcessamentoDeNotas.NoPattern\ProcessamentoDeNotas.NoPattern.csproj", "{FD553509-FD61-4C08-A696-8E4E8A8BC694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessamentoDeNotas.NoPattern", "No Patterns\ProcessamentoDeNotas.NoPattern\ProcessamentoDeNotas.NoPattern.csproj", "{FD553509-FD61-4C08-A696-8E4E8A8BC694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrecoDoProduto.NoPattern", "No Patterns\PrecoDoProduto.NoPatter\PrecoDoProduto.NoPattern.csproj", "{D77D37D1-AF7C-4C62-839D-9B17932D398C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrecoDoProduto.NoPattern", "No Patterns\PrecoDoProduto.NoPatter\PrecoDoProduto.NoPattern.csproj", "{D77D37D1-AF7C-4C62-839D-9B17932D398C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrecoDoProduto.WithChain", "With Patterns\PrecoDoProduto.WithChain\PrecoDoProduto.WithChain.csproj", "{42C58242-7316-4717-B544-260377FDFB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeracaoDeProdutos.NoPattern", "No Patterns\GeracaoDeNotasFiscais.NoPattern\GeracaoDeProdutos.NoPattern.csproj", "{2FECD0B7-E8B7-4F90-9D1D-9A53AC47B791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.NoPattern", "No Patterns\Pagamentos.NoPattern\Pagamentos.NoPattern.csproj", "{D833D984-5B52-4612-BE21-014B45976460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.WithAdapter", "With Patterns\Pagamentos.WithAdapter\Pagamentos.WithAdapter.csproj", "{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{D77D37D1-AF7C-4C62-839D-9B17932D398C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D77D37D1-AF7C-4C62-839D-9B17932D398C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D77D37D1-AF7C-4C62-839D-9B17932D398C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C58242-7316-4717-B544-260377FDFB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C58242-7316-4717-B544-260377FDFB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C58242-7316-4717-B544-260377FDFB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C58242-7316-4717-B544-260377FDFB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FECD0B7-E8B7-4F90-9D1D-9A53AC47B791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FECD0B7-E8B7-4F90-9D1D-9A53AC47B791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FECD0B7-E8B7-4F90-9D1D-9A53AC47B791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FECD0B7-E8B7-4F90-9D1D-9A53AC47B791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D833D984-5B52-4612-BE21-014B45976460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D833D984-5B52-4612-BE21-014B45976460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D833D984-5B52-4612-BE21-014B45976460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D833D984-5B52-4612-BE21-014B45976460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +100,10 @@ Global
 		{7D1967AA-33EC-4F79-A856-03096C28B5A0} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
 		{FD553509-FD61-4C08-A696-8E4E8A8BC694} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
 		{D77D37D1-AF7C-4C62-839D-9B17932D398C} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
+		{42C58242-7316-4717-B544-260377FDFB43} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
+		{2FECD0B7-E8B7-4F90-9D1D-9A53AC47B791} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
+		{D833D984-5B52-4612-BE21-014B45976460} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
+		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD1418E2-D2B7-478B-A09D-DAD2F1791AE3}
