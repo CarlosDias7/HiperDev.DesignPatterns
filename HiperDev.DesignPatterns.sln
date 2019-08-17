@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.NoPattern", "No 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.WithAdapter", "With Patterns\Pagamentos.WithAdapter\Pagamentos.WithAdapter.csproj", "{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorDeNotasFiscais.NoPattern", "No Patterns\GeradorDeNotasFiscais.NoPattern\GeradorDeNotasFiscais.NoPattern.csproj", "{B0CB4362-195B-4EC5-A1DA-57173CD88DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorDeNotasFiscais.WithBuilder", "With Patterns\GeradorDeNotasFiscais.WithBuilder\GeradorDeNotasFiscais.WithBuilder.csproj", "{6479F6C5-D2CB-4CC0-8EBE-FF00A459A994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0CB4362-195B-4EC5-A1DA-57173CD88DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CB4362-195B-4EC5-A1DA-57173CD88DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CB4362-195B-4EC5-A1DA-57173CD88DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CB4362-195B-4EC5-A1DA-57173CD88DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6479F6C5-D2CB-4CC0-8EBE-FF00A459A994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6479F6C5-D2CB-4CC0-8EBE-FF00A459A994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6479F6C5-D2CB-4CC0-8EBE-FF00A459A994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6479F6C5-D2CB-4CC0-8EBE-FF00A459A994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +109,8 @@ Global
 		{42C58242-7316-4717-B544-260377FDFB43} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
 		{D833D984-5B52-4612-BE21-014B45976460} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
 		{EF7C1AD0-D68D-4DCF-AA33-4FC6B2796EA3} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
+		{B0CB4362-195B-4EC5-A1DA-57173CD88DA9} = {203BEBE2-484E-40A4-97CD-F395B1AED935}
+		{6479F6C5-D2CB-4CC0-8EBE-FF00A459A994} = {E3FB4BA9-E802-4867-8DF9-B3932ADDA2DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD1418E2-D2B7-478B-A09D-DAD2F1791AE3}
