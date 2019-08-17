@@ -7,18 +7,18 @@ using EmissaoDeOrcamento.WithPatterns.Services.CalculoDosTributos.Icms.Factory;
 
 namespace EmissaoDeOrcamento.WithPatterns.Services.CalculoDosTributos
 {
-    public class CalculadoraDeIcms
+    public class CalculadoraDeIcmsServices
     {
         private readonly IIcmsFactory _icmsFactory;
 
-        public CalculadoraDeIcms(IIcmsFactory icmsFactory)
+        public CalculadoraDeIcmsServices(IIcmsFactory icmsFactory)
         {
             _icmsFactory = icmsFactory;
         }
 
         public ICollection<ItemComIcmsDto> CalcularIcms(Orcamento orcamento)
         {
-            if (orcamento.Itens?.Any() ?? true) return null;
+            if (!orcamento.Itens?.Any() ?? true) return null;
             return orcamento.Itens
                 .Select(i => CalcularIcmsDoItem(i))
                 .ToList();
