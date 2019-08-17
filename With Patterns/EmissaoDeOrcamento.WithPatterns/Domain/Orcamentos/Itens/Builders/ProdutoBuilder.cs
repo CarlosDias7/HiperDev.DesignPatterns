@@ -6,6 +6,7 @@ namespace EmissaoDeOrcamento.WithPatterns.Domain.Orcamentos.Itens.Builders
     {
         private bool Cancelado { get; set; }
 
+        private short CodigoDaSituacaoTributariaIcms { get; set; }
         private string Nome { get; set; }
 
         private decimal Quantidade { get; set; }
@@ -16,12 +17,18 @@ namespace EmissaoDeOrcamento.WithPatterns.Domain.Orcamentos.Itens.Builders
 
         public override Produto Build()
         {
-            return new Produto(Cancelado, Codigo, Nome, Quantidade, ValorDeDesconto, ValorUnitarioBruto);
+            return new Produto(Cancelado, Codigo, CodigoDaSituacaoTributariaIcms, Nome, Quantidade, ValorDeDesconto, ValorUnitarioBruto);
         }
 
         public ProdutoBuilder WithCancelado(bool cancelado)
         {
             Cancelado = cancelado;
+            return this;
+        }
+
+        public ProdutoBuilder WithCodigoDaSituacaoTributariaIcms(short codigoDaSituacaoTributariaIcms)
+        {
+            CodigoDaSituacaoTributariaIcms = codigoDaSituacaoTributariaIcms;
             return this;
         }
 
