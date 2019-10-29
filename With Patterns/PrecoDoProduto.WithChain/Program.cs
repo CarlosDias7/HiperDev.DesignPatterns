@@ -43,7 +43,23 @@ namespace PrecoDoProduto.WithChain
                 .WithCodigo(10)
                 .Build();
 
-            var produtos = new List<Produto> { produto1, produto2, produto3 };
+            var produto4 = new ProdutoBuilder()
+                .WithCancelado(false)
+                .WithNome("Bacon")
+                .WithQuantidade(20.00m)
+                .WithValorUnitarioBruto(99.00m)
+                .WithCodigo(3)
+                .Build();
+
+            var produto5 = new ProdutoBuilder()
+                    .WithCancelado(false)
+                    .WithNome("Pão de batata")
+                    .WithQuantidade(20.00m)
+                    .WithValorUnitarioBruto(99.00m)
+                    .WithCodigo(3)
+                    .Build();
+
+            var produtos = new List<Produto> { produto1, produto2, produto3, produto4, produto5 };
 
             return new PedidoDeVendaBuilder()
                 .WithCliente(cliente)

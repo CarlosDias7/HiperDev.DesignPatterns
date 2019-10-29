@@ -60,7 +60,7 @@ namespace PrecoDoProduto.WithChain.Domain.Orcamentos.Itens
         public override string ToString()
         {
             return $@"
-            Produto {Codigo}
+            Produto {Codigo} - {Nome}
             Quantidade: {Quantidade}
             Vlr. Unit. Bruto: {ValorUnitarioBruto}
             Vlr. Desconto: {ValorDeDesconto}

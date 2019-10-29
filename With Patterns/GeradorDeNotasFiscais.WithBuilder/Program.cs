@@ -30,27 +30,30 @@ namespace GeradorDeNotasFiscais.WithBuilder
         }
 
         private NotaFiscal GetNotaAutorizadaBulder()
-                    => new NotaFiscalBuilder()
+           => new NotaFiscalBuilder()
                 .WithCnpjDaLoja("12605982000124")
                 .WithModelo(55)
                 .WithNumero(1)
+                .WithProtocoloDeAutorizacao("18776588")
                 .WithSerie(1)
                 .WithSituacao(new Autorizada())
                 .WithValorTotal(10.00m)
                 .Build();
 
         private NotaFiscal GetNotaCanceladaBulder()
-                    => new NotaFiscalBuilder()
+            => new NotaFiscalBuilder()
                 .WithCnpjDaLoja("12605982000124")
                 .WithModelo(55)
                 .WithNumero(1)
+                .WithProtocoloDeAutorizacao("18776588")
+                .WithProtocoloDeCancelamento("89926299")
                 .WithSerie(1)
                 .WithSituacao(new Cancelada())
                 .WithValorTotal(10.00m)
                 .Build();
 
         private NotaFiscal GetNotaNaoAutorizadaBulder()
-                                    => new NotaFiscalBuilder()
+            => new NotaFiscalBuilder()
                 .WithCnpjDaLoja("12605982000124")
                 .WithModelo(55)
                 .WithNumero(1)

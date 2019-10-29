@@ -1,4 +1,5 @@
 ﻿using GeradorDeNotasFiscais.WithBuilder.Domain.NotasFiscais.Situacoes;
+using GeradorDeNotasFiscais.WithBuilder.Domain.NotasFiscais.Situacoes.Tipos;
 
 namespace GeradorDeNotasFiscais.WithBuilder.Domain.NotasFiscais
 {
@@ -40,11 +41,13 @@ namespace GeradorDeNotasFiscais.WithBuilder.Domain.NotasFiscais
 
         public void SetProtocoloDeAutorizacao(string protocoloDeAutorizacao)
         {
+            if (Situacao is NaoAutorizada) return;
             ProtocoloDeAutorizacao = protocoloDeAutorizacao;
         }
 
         public void SetProtocoloDeCancelamento(string protocoloDeCancelamento)
         {
+            if (!(Situacao is Cancelada)) return;
             ProtocoloDeCancelamento = protocoloDeCancelamento;
         }
 

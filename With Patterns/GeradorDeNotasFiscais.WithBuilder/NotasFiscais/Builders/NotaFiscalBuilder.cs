@@ -15,7 +15,7 @@ namespace GeradorDeNotasFiscais.WithBuilder.Domain.NotasFiscais.Builders
 
         public NotaFiscal Build()
         {
-            return new NotaFiscal(CnpjDaLoja, Modelo, Numero, Serie, Situacao, ValorTotal);
+            return new NotaFiscal(CnpjDaLoja, Modelo, Numero, Serie, Situacao, ValorTotal, ProtocoloDeAutorizacao, ProtocoloDeCancelamento);
         }
 
         public NotaFiscalBuilder WithCnpjDaLoja(string cnpjDaLoja)
